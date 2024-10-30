@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../fonts/Poppins-Regular.ttf") format("ttf"),
+         url("../fonts/Poppins-Medium.ttf") format("ttf"),
+         url("../fonts/Poppins-SemiBold.ttf") format("truetype"),
+         url("../fonts/Poppins-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Poppins-Regular", "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.container { 
+    border: 1px solid #cccccc;
+    background-color: #f0fff2; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: normal;
+}
+
+input {
+    font-family: "Poppins-Regular", "Arial", sans-serif;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    font-family: "Poppins-Regular", "Arial", sans-serif;
+    letter-spacing: 1px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h2 { 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    input, button {
+        width: 100%;
+    }
+}
